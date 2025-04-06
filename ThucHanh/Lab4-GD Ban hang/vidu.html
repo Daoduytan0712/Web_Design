@@ -1,0 +1,147 @@
+<!-- 1. Ví dụ: Khai báo JavaScript trực tiếp trong HTML -->
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Ví dụ JavaScript</title>
+</head>
+
+<body>
+    <script>
+        alert('Chào mừng bạn đến với JavaScript!');
+    </script>
+</body>
+
+</html>
+
+<!--  2. Ví dụ: Import JavaScript từ file ngoài -->
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Import JavaScript</title>
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <h1>Ví dụ Import JavaScript</h1>
+</body>
+
+</html>
+
+<!-- 3. Ví dụ: Khai báo biến với const -->
+const myConst = 4;
+console.log(myConst);
+
+<!-- 4. Ví dụ: Khai báo biến với var -->
+var x = 3;
+console.log(x);
+
+<!-- 5. Ví dụ: Khai báo biến với let -->
+let y = 5;
+console.log(y);
+
+<!-- 6. Ví dụ: Toán tử so sánh -->
+console.log(5 == '5'); // true (chỉ so sánh giá trị)
+console.log(5 === '5'); // false (so sánh cả kiểu dữ liệu và giá trị)
+
+<!-- 7. Ví dụ: Vòng lặp for -->
+for (let i = 0; i < 5; i++) { console.log(i); } <!-- 8. Ví dụ: Vòng lặp while -->
+    let count = 0;
+    while (count < 3) { console.log(count); count++; } <!-- 9. Ví dụ: Hàm kiểm tra số chẵn/lẻ -->
+        function isEven(number) {
+        return number % 2 === 0 ? 'Số chẵn' : 'Số lẻ';
+        }
+        console.log(isEven(4)); // Số chẵn
+
+        <!-- 10. Ví dụ: alert(), prompt() và confirm() -->
+        alert("Xin chào!");
+        let name = prompt("Nhập tên của bạn:", "Người dùng");
+        let isConfirmed = confirm("Bạn có chắc chắn không?");
+
+        <!-- 11. Ví dụ: Tạo đồng hồ online -->
+        function startClock() {
+        setInterval(() => {
+        let now = new Date();
+        console.log(now.toLocaleTimeString());
+        }, 1000);
+        }
+        startClock();
+
+        <!--  12. Ví dụ: Bắt sự kiện onclick -->
+        <button onclick="alert('Bạn vừa nhấn nút!')">Nhấn vào đây</button>
+
+        <!-- 13. Ví dụ: addEventListener() -->
+        document.getElementById("myButton").addEventListener("click", function() {
+        alert("Bạn vừa nhấn nút!");
+        });
+
+        <!-- 14. Ví dụ: Thay đổi nội dung HTML bằng DOM  -->
+        document.getElementById("content").innerHTML = "Nội dung đã thay đổi!";
+
+        <!-- 15. Ví dụ: Thêm phần tử mới bằng createElement() -->
+        let newDiv = document.createElement('div');
+        newDiv.innerText = "Đây là một thẻ div mới";
+        document.body.appendChild(newDiv);
+
+        <!--  16. Ví dụ: Kiểm tra năm nhuận -->
+        function isLeapYear(year) {
+        return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+        }
+        console.log(isLeapYear(2024)); // true
+
+        <!-- 17. Ví dụ: setTimeout() và clearTimeout() -->
+        let timer = setTimeout(() => {
+        alert('Thông báo sau 3 giây!');
+        }, 3000);
+
+        // Hủy bỏ thời gian chờ
+        clearTimeout(timer);
+
+        <!-- 18. Ví dụ: setInterval() và clearInterval() -->
+        let interval = setInterval(() => {
+        console.log('Chạy mỗi 2 giây');
+        }, 2000);
+
+        // Dừng lặp
+        clearInterval(interval);
+
+        <!-- 19. Ví dụ: Kiểm tra giá trị NaN -->
+        let value = "abc" * 5; // NaN
+        console.log(isNaN(value)); // true
+
+        <!-- 20. Ví dụ: Xử lý mảng với push() và pop() -->
+        let arr = [1, 2, 3];
+        arr.push(4);
+        console.log(arr); // [1, 2, 3, 4]
+        arr.pop();
+        console.log(arr); // [1, 2, 3]
+
+        <!-- 21. Ví dụ: Sự kiện onload -->
+        window.onload = function() {
+        alert("Trang đã tải xong!");
+        };
+
+        <!-- 22. Ví dụ: Validate form -->
+        function validateForm() {
+        let username = document.getElementById('username').value;
+        if (username === '') {
+        alert('Tên đăng nhập không được để trống!');
+        return false;
+        }
+        return true;
+        }
+
+        <!-- 23. Ví dụ: Sự kiện onclick với return false -->
+        <a href="https://example.com" onclick="return false;">Không chuyển hướng</a>
+
+        <!-- 24. Ví dụ: removeEventListener() -->
+        function sayHello() {
+        alert("Xin chào!");
+        }
+        document.getElementById("myBtn").addEventListener("click", sayHello);
+        document.getElementById("myBtn").removeEventListener("click", sayHello);
+
+        <!-- 25. Ví dụ: Truy cập phần tử bằng querySelector() -->
+        let firstItem = document.querySelector('.item');
+        console.log(firstItem);

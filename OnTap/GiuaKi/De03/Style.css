@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+   
+}
+.layer {
+    position: relative;
+}
+.layer img{
+    width: 100%;
+}
+.title_header{
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+}
