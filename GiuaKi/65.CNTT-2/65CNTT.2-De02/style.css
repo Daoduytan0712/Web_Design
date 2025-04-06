@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    color: #07484A;
+    background-color: #FDFBF8;
+}
+a{
+    text-decoration: none;
+    color: #07484A;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color: #C4C4C4;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 80px;
+}
+.title_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.menu_header{
+    display: flex;
+    align-items: center;
+}
+.menu_header li{
+    list-style-type: none;
+    padding: 0 20px;
+    font-size: 25px;
+}
+.menu_header li a:hover, .menu_active{
+    text-decoration: underline;
+    font-weight: 800;
+}
+.icon_header i{
+    font-size: 25px;
+    padding-left: 20px;
+}
+.banner{
+   margin-top: 150px;
+}
+.banner h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.banner p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+.shop_now{
+    background-color: #70908B;
+    padding: 12px;
+    width: 15%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+.category h2, .special h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.category_main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 30px;
+}
+.category_left form{
+    background-color: #F0F0F0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.category_left form input{
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.menu_category{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.menu_main li{
+    list-style-type: none;
+    padding-bottom: 45px; 
+}
+.menu_main li a:hover{
+    text-decoration: underline;
+    font-weight: 800;
+}
+.right_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    width: 2px;
+    height: 416px;
+    background-color: #07484A;
+    position: relative;
+}
+.line2{
+    width: 5px;
+    height: 52px;
+    background-color: #70908B;
+    position: absolute;
+    left: -2px;
+}
+.right_menu_icon{
+    display: flex;
+    flex-direction: column;
+}
+.right_menu_icon i{
+    padding: 10px;
+    background-color: #E0EFF6;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+.fa-arrow-down{
+    background-color: #F9D9DA !important;
+}
+.all_categories {
+    width: 80%;
+}
+.all_categories i{
+    margin-left: 10px;
+}
+.category_box{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:30px;
+    margin-bottom: 20px;
+}
+.box{
+    width: 100%;
+    height: 31vh;
+    background-color: #D9D9D9;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    border-radius: 10px;
+}
+.explore span{
+   background-color: #E0EFF6;
+   width: 50%;
+   font-weight: 600;
+   font-size: 20px;
+   padding: 10px;
+   color: #07484A;
+   font-family: "Open Sans", sans-serif;
+}
+.box_active{
+    background-color: #ADADAD;
+}
+.box_active p{
+    margin-bottom: 10px;
+}
+.special{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.special_main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+.special_left_img img{
+    width: 100%;
+}
+.special_left_img{
+    position: relative;
+    margin-bottom: 15px;
+}
+.special_left_icon{
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
+    padding: 12px;
+    background-color: #07484A;
+    color: #fff;
+    border-radius: 15px;
+}
+.special_info{
+    font-family: "Open Sans", sans-serif;
+}
+.special_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.special_name p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #70908B;
+    padding: 12px;
+    width: 25%;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.cart i{
+    margin-left: 12px;
+    font-size: 25px;
+}
+.star{
+    color: #FEC107;
+    margin-bottom: 10px;
+}
+.special_rigt{
+    font-family: "Open Sans", sans-serif;
+}
+.special_rigt h4{
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.special h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.special_rigt p{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.see_more{
+    display:  flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+.see_more i{
+    margin-left: 10px;
+}
+.see_more_black{
+    color: #000;
+}
+.special_product{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.special_product_box{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 20px;
+    gap:10px
+}
+.special_product_box_img img{
+    width: 100%;
+}
+.special_product_box_name{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.special_product_left p{
+    font-size: 10px;
+}
+.special_product_left{
+    width: 80%;
+}
+.line_special{
+    height:150px;
+}
+.news_letter{
+    background-color: #E0F7F1;
+}
+.news_letter{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:50px;
+    align-items: center;
+}
+.news_letter_left img{
+    width: 100%;
+}
+.new_letter_right h3{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.new_letter_right h3 span{
+    font-weight: 700;;
+}
+.new_letter_right p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+.new_letter_right input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: #ADADAD;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 25px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+footer span{
+    font-weight: 700;
+}

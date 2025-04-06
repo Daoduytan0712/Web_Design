@@ -1,0 +1,323 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+header{
+  background-image: url("images/bg-top.png") ;
+  background-position: 500px top;  /* cách trái 500px, top giữ ở trên cùng */
+  background-size: calc(100% - 500px) 100%; /* trừ đi 500px từ trái để vẫn phủ tới mép phải */
+  background-repeat: no-repeat;
+  width:100%;
+  height: 120vh;
+}
+.title_header{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.title_header h1{
+    font-size: 35px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li{
+    list-style-type: none;
+    padding: 0px 40px
+}
+.menu li a{
+    font-size: 25px;
+}
+.menu li a:hover{
+    text-decoration: underline;
+}
+.bx-rotate-270{
+    font-size: 45px !important;
+}
+.icon_header i{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.sole_mate{
+ display: grid;
+ grid-template-columns: 40% 60%;
+ align-items: center;
+ margin-top: 50px;
+}
+.sole_mate_right img{
+    width: 100%;
+}
+.sole_mate_right{
+    text-align: center;
+}
+.sole_mate_left h4{
+    font-size: 25px;
+}
+.sole_mate_left h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.sole_mate_left p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.ShopNow p{
+    color: #fff;
+    background-color: #000;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Đổ bóng chỉ bên dưới */
+}
+.icon_shop{
+    background-color: #000;
+    margin-bottom: 70px;
+}
+.icon_shop_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trending_shoe{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap:20px;
+    margin-bottom: 100px;
+}
+.our_trending{
+    display: flex;
+    align-items: center;
+}
+.our_trending span{
+    margin-top: -17px;
+    margin-right: 10px;
+}
+.our_trending h5{
+    font-size: 20px;
+}
+.trending_left h2{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.trending_left p{
+    margin-bottom: 20px;
+}
+.explore_box{
+    color: #fff;
+    background-color: #000;
+    width: 40%;
+    height: 65px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.trending_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shoes_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap:20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.shoe{
+  border: 1px solid #d3d0d0;
+  background-color: #f1efef;
+  border-radius: 15px;
+  padding: 20px;
+}
+.shoe img{
+    width: 100%;
+}
+.shoe p{
+    font-size: 25px;
+    font-weight: 500;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.price span{
+    font-size: 28px;
+    font-weight: 500;
+}
+.price i{
+    font-size: 40px;
+}
+.bxs-chevron-left, .bxs-chevron-right{
+    font-size: 35px;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle li{
+    list-style-type: none;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    margin: 0px 5px;
+}
+.circle1{
+    border-radius: 50%;
+}
+.active {
+    width: 30px !important;
+    height: 10px !important;
+    border-radius: 10px !important;
+}
+.explore{
+    background-color: #fd8b92;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 5% 65% 25% 5%;
+    align-items: center;
+}
+.explore_img img{
+    width: 100%;
+    margin-top:-250px;
+    margin-left: -140px;
+    margin-bottom: -75px;
+}
+.explore i{
+    padding: 20px;
+}
+.explore_way{
+    margin-left: -120px;
+    display: flex;
+    flex-direction: column;
+}
+.explore_way h4{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.explore_way p{
+    margin-bottom: 15px;
+}
+.explore_box_way{
+    color: #fd8b92;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.explore_box_img_shoe{
+    display: flex;
+    flex-direction: column;
+}
+.circle_explore_box{
+    margin-left: -170px;
+}
+.circle_explore_box li{
+    background-color: #fff !important;
+}
+.explore_box_img{
+    display: flex;
+    align-content: center;
+    
+}
+.shoe_img{
+    background-color: #fff;
+    position: relative;
+    height: 70px;
+    width: 73px;
+    margin-right: 35px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.shoe_img img{
+    position: absolute;
+    left:-90px;
+    top:-20px;
+}
+footer{
+    background-color: #000;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+.foot{
+    display:  flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.slick h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.slick p{
+    margin-bottom: 20px;
+}
+.icon_footer i{
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.subscribe h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.subscribe_form{
+    background-color: #fff;
+    color: #000;
+    padding: 15px;
+    border-radius: 10px;
+}
+.subscribe_form input{
+    outline: none;
+    border:none;
+    background-color: transparent;
+  margin-right: 5px;
+    color: #000;
+    font-size: 16px;
+}
+.subscribe_form span{
+    font-weight: 600;
+    padding-left: 10px;
+    border-left: 2px solid #000;
+}
+.links h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.links li{
+    list-style-type: none;
+}
+.foot_name{
+    text-align: center;
+}
+.foot_name h3{
+    margin-top: 15px;
+    font-size: 25px;
+}
