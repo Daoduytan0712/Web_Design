@@ -1,0 +1,29 @@
+.menu-header .nav-item .nav-link {
+  text-transform: uppercase !important;
+  color: black !important;
+  font-weight: 500 !important;
+}
+.menu-header .nav-item .nav-link.active {
+  color: red !important;
+}
+.option-cart{
+  background-color: rgba(255, 255, 255,0.6) !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.01s;
+  transform: translateY(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover .option-cart{
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+}
+.footer {
+  background-color: #002C3E !important;
+  padding: 20px 0 !important;
+  color: white !important;
+}

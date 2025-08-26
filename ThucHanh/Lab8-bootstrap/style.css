@@ -1,0 +1,21 @@
+.body{
+    background-color: #E1E8F0 !important;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white !important;
+}
+footer{
+    background-color: #465568 !important;
+    color: white;
+}
+.khunggio{
+    font-size: 12px;
+    background-color:#CACECE ;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #5b416a;
+}
+.khunggio:hover{
+    background-color: darkgrey;
+}

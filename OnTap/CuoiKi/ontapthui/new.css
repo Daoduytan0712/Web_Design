@@ -1,0 +1,29 @@
+.banner{
+    position:relative;
+}
+.banner .banner-header{
+    position: relative;
+}
+@media screen and (min-width: 768px) {
+    .banner .banner-header {
+        top:0;
+        position:absolute;
+    }
+    
+}
+.banner1{
+    position: relative;
+    border:1px solid #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.banner1 .banner-header1{
+    position: relative;
+}
+@media screen and (min-width: 768px) {
+    .banner1 .banner-header1 {
+       position: absolute;
+    }
+    
+}

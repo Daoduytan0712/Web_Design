@@ -1,0 +1,26 @@
+.nav-link.active, .nav-link:hover{
+  color: red !important;
+  font-weight: bold !important;
+}
+.nav-link{
+  color: black !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+}
+.option-cart{
+  background-color: rgba(255, 255, 255, 0.6); /*Đặt màu nền là trắng với độ trong suốt 60% (giúp overlay mờ, nhìn thấy hình ảnh phía sau).*/
+  opacity: 0;/*Đặt độ mờ là 0, tức là phần tử hoàn toàn trong suốt (ẩn đi).*/
+  visibility: hidden /*Ẩn phần tử khỏi giao diện và không thể tương tác.*/;
+  transition: all 0.01s;/*Tạo hiệu ứng chuyển đổi rất nhanh (0.01 giây) khi thuộc tính thay đổi (ví dụ khi hiện overlay).*/
+  transform:translateY(100%);/*Đẩy phần tử xuống dưới 100% chiều cao của nó (ẩn ra ngoài khung chứa).*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card:hover .option-cart{
+  opacity: 1;/*Đặt độ mờ là 1, tức là phần tử hoàn toàn hiển thị (không trong suốt).*/
+  visibility: visible; /*Làm cho phần tử hiển thị trên giao diện và có thể tương tác.*/
+  transform: translate(0); /*Đưa phần tử về đúng vị trí ban đầu (không bị đẩy xuống dưới nữa).*/
+
+}

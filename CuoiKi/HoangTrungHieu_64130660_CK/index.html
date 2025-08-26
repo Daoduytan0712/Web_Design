@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <img src="Images/logo.png" alt="" width="10%" class="me-3">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-xl-0 text-end fw-semibold p-2 ">
+            <li class="nav-item">
+              <a class="nav-link active mx-4" aria-current="page" href="#">BONSAI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-4" href="#">FLOWER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-4" href="#">CONTACT US</a>
+            </li>
+
+
+          </ul>
+          <div class="ms-lg-1 ms-0 mt-lg-0 mt-3">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn bg-danger text-warning rounded-5" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              LOGIN
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/Slide_01.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block fw-bold ">
+            <h4 class="fs-3 my-2">New Arrivals </h4>
+            <h2 class="text-warning fs-1 my-2">Bonsai Trees </h2>
+            <button type="button" class="btn bg-danger text-warning rounded-5">
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Slide_02.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block fw-bold ">
+            <h4 class="fs-3 my-2">New Arrivals </h4>
+            <h2 class="text-warning fs-1 my-2">Bonsai Trees </h2>
+            <button type="button" class="btn bg-danger text-warning rounded-5">
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Slide_03.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block fw-bold ">
+            <h4 class="fs-3 my-2">New Arrivals </h4>
+            <h2 class="text-warning fs-1 my-2">Bonsai Trees </h2>
+            <button type="button" class="btn bg-danger text-warning rounded-5">
+              ORDER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <h1 class="my-2 fw-semibold fs-1 mx-auto text-center">Popular Categories </h1>
+    <!-- <nav class="navbar navbar-expand-sm text-center mx-auto ms-auto">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> -->
+    <ul class="navbar-nav mb-lg-0 align-items-center">
+      <li class=" dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          All Categories
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">FLOWERS</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">BONSAI</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">FRUIT</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="bg-black mx-auto my-1 mb-3" style="width: 100px; height: 4px"></div>
+    <div class="row w-100">
+      <div class="col-12 col-md-3 my-2">
+        <div class="card position-relative rounded-2 border-0 ">
+          <div class="card-picture position-relative">
+            <img src="Images/img_01.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body bg-body-tertiary">
+            <h2 class="card-title text-center mx-auto my-1 fs-2">Flower Baskets </h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-md-3 my-2">
+        <div class="card position-relative rounded-2 border-0 ">
+          <div class="card-picture position-relative">
+            <img src="Images/img_02.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body bg-body-tertiary">
+            <h2 class="card-title text-center mx-auto my-1 fs-2"> Boho Collection </h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-md-3 my-2">
+        <div class="card position-relative rounded-2 border-0 ">
+          <div class="card-picture position-relative">
+            <img src="Images/img_03.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body bg-body-tertiary">
+            <h2 class="card-title text-center mx-auto my-1 fs-2"> Flower Box </h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-md-3 my-2">
+        <div class="card position-relative rounded-2 border-0 ">
+          <div class="card-picture position-relative">
+            <img src="Images/img_04.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body bg-body-tertiary">
+            <h2 class="card-title text-center mx-auto my-1 fs-2">Flower Bouquets </h2>
+          </div>
+        </div>
+      </div>
+
+  </main>
+  <footer>
+    <div class=" mt-3 p-4">
+      <div class="text-end ">
+        <p class="text-white mt-3">DESIGNED BY HOÀNG TRUNG HIẾU - 64130660</p>
+      </div>
+
+
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">User</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn dangnhap">Đăng nhập</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+   <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <!-- thư viện jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Lấy form element
+      const form = document.querySelector('form');
+
+      // Xử lý sự kiện submit form
+      form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Ngăn chặn form submit mặc định
+
+        // Lấy giá trị từ input
+        const username = document.getElementById('exampleInputEmail1').value;
+        const password = document.getElementById('exampleInputPassword1').value;
+
+        // Kiểm tra thông tin đăng nhập
+        if (username === '64130660' && password === '65.cntt') {
+          // Ẩn modal
+          const modal = document.getElementById('exampleModal');
+          const bootstrapModal = bootstrap.Modal.getInstance(modal);
+          bootstrapModal.hide();
+
+          // Thay thế phần tử chứa nút "Đăng nhập" và "Đăng ký" bằng thông báo
+          const buttonContainer = document.querySelector('.ms-lg-1.ms-0.mt-lg-0.mt-3');
+          buttonContainer.outerHTML = `
+                <div class="ms-lg-1 ms-0 mt-lg-0 mt-3">
+                    <span>Chào 64130660</span>
+                </div>
+            `;
+        } else {
+          // Hiển thị thông báo lỗi
+          alert('Tên người dùng hoặc mật khẩu không đúng!');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

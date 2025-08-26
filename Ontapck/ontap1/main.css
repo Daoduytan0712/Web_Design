@@ -1,0 +1,34 @@
+.banner{
+  position: relative;
+}
+.banner-header{
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+.banner .banner-header{
+  position: absolute;
+  top: 0;
+
+}
+}
+
+.banner2 .banner2-header{
+ 
+ position: relative;
+  
+}
+@media screen and (min-width: 768px) {
+.banner2 .banner2-header{
+  position: absolute;
+ 
+}
+}
+.banner3{
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+

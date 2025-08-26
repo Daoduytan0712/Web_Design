@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lab6_Đào Duy Tấn_65133141</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <!-- font icon -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <!-- script -->
+      <script>
+        $(document).ready(function () {
+          $('form').on('submit', function (e) {
+            e.preventDefault(); // Ngăn không cho form reload trang
+            let searchText = $('input[type="search"]').val(); // Lấy nội dung nhập
+            $('footer').html(`<div class="container"><p class="text-center fs-3 text-danger">${searchText}</p></div>`);
+          });
+        });
+      </script>
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <div class="container">
+        <div class="row top-header">
+          <div class="col-xl-9">
+            <img src="images/banner.png" alt="banner">
+          </div>
+          <div class="col-xl-3">
+            <form class="d-flex" role="search">
+              <input type="search"
+                class="rounded-0 rounded-start w-50 border border-secondary border-end-0"
+                placeholder="Search">
+              <button type="submit"
+                class="btn btn-warning rounded-start-0 w-50">
+                Tìm kiếm
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- menu -->
+        <nav class="navbar  navbar-expand-xl menu-header">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Trang
+                    chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sản phẩm</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Tin tức
+                  </a>
+                  <ul class="dropdown-menu shadow-lg">
+                    <li><a class="dropdown-item" href="#">Thời trang</a></li>
+                    <li><a class="dropdown-item" href="#">Tạp chí thời
+                        trang</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" role="button">Đăng nhập</a>
+                </li>
+                <li class="nav-item p-2">/</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" role="button">Đăng ký</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- slide ảnh -->
+        <div id="carouselExample" class="carousel slide px-5">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slide11.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide12.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide14.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <p class="display-2 text-center fw-semibold">Danh mục <span
+            class="text-danger">Sản phẩm</span></p>
+        <!-- <hr width="50px" style="height: 4px; background-color: red;" class="bg-danger border-0 mx-auto"/> -->
+        <div class="bg-danger mx-auto my-3"
+          style="width: 60px; height: 4px"></div>
+        <!-- danh sach san pham -->
+        <div class="row px-5">
+          <div class="col-md-6 col-xl-4 my-2">
+            <div class="card p-2 shadow-sm border-0 position-relative">
+              <div class="option-cart position-absolute z-3 w-100 h-100">
+                <a href="#" role="button"
+                  class="btn btn-danger text-white rounded-5 mb-2 w-50">Thêm vào
+                  giỏ hàng</a>
+                <a href="#" role="button"
+                  class="btn btn-dark text-white rounded-5 w-50">Mua ngay</a>
+              </div>
+              <img src="images/anh1.jpg" class="card-img-top" alt="...">
+              <div class="card-body position-absolute bottom-0 w-100">
+                <div class="d-flex px-3 justify-content-between">
+                  <h5 class="card-title text-danger">Tên sản phẩm</h5>
+                  <p class="card-text text-success">300000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 my-2">
+            <div class="card p-2 shadow-sm border-0 position-relative">
+              <div class="option-cart position-absolute z-3 w-100 h-100">
+                <a href="#" role="button"
+                  class="btn btn-danger text-white rounded-5 mb-2 w-50">Thêm vào
+                  giỏ hàng</a>
+                <a href="#" role="button"
+                  class="btn btn-dark text-white rounded-5 w-50">Mua ngay</a>
+              </div>
+              <img src="images/anh2.jpg" class="card-img-top" alt="...">
+              <div class="card-body position-absolute bottom-0 w-100">
+                <div class="d-flex px-3 justify-content-between">
+                  <h5 class="card-title text-danger">Tên sản phẩm</h5>
+                  <p class="card-text text-success">300000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 my-2">
+            <div class="card p-2 shadow-sm border-0 position-relative">
+              <div class="option-cart position-absolute z-3 w-100 h-100">
+                <a href="#" role="button"
+                  class="btn btn-danger text-white rounded-5 mb-2 w-50">Thêm vào
+                  giỏ hàng</a>
+                <a href="#" role="button"
+                  class="btn btn-dark text-white rounded-5 w-50">Mua ngay</a>
+              </div>
+              <img src="images/anh3.jpg" class="card-img-top" alt="...">
+              <div class="card-body position-absolute bottom-0 w-100">
+                <div class="d-flex px-3 justify-content-between">
+                  <h5 class="card-title text-danger">Tên sản phẩm</h5>
+                  <p class="card-text text-success">300000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row px-5">
+          <div class="col-md-6 col-xl-4 my-2">
+            <div class="card p-2 shadow-sm border-0 position-relative">
+              <div class="option-cart position-absolute z-3 w-100 h-100">
+                <a href="#" role="button"
+                  class="btn btn-danger text-white rounded-5 mb-2 w-50">Thêm vào
+                  giỏ hàng</a>
+                <a href="#" role="button"
+                  class="btn btn-dark text-white rounded-5 w-50">Mua ngay</a>
+              </div>
+              <img src="images/anh4.jpg" class="card-img-top" alt="...">
+              <div class="card-body position-absolute bottom-0 w-100">
+                <div class="d-flex px-3 justify-content-between">
+                  <h5 class="card-title text-danger">Tên sản phẩm</h5>
+                  <p class="card-text text-success">300000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 my-2">
+            <div class="card p-2 shadow-sm border-0 position-relative">
+              <div class="option-cart position-absolute z-3 w-100 h-100">
+                <a href="#" role="button"
+                  class="btn btn-danger text-white rounded-5 mb-2 w-50">Thêm vào
+                  giỏ hàng</a>
+                <a href="#" role="button"
+                  class="btn btn-dark text-white rounded-5 w-50">Mua ngay</a>
+              </div>
+              <img src="images/anh5.jpg" class="card-img-top" alt="...">
+              <div class="card-body position-absolute bottom-0 w-100">
+                <div class="d-flex px-3 justify-content-between">
+                  <h5 class="card-title text-danger">Tên sản phẩm</h5>
+                  <p class="card-text text-success">300000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 my-2">
+            <div class="card p-2 shadow-sm border-0 position-relative">
+              <div class="option-cart position-absolute z-3 w-100 h-100">
+                <a href="#" role="button"
+                  class="btn btn-danger text-white rounded-5 mb-2 w-50">Thêm vào
+                  giỏ hàng</a>
+                <a href="#" role="button"
+                  class="btn btn-dark text-white rounded-5 w-50">Mua ngay</a>
+              </div>
+              <img src="images/anh6.jpg" class="card-img-top" alt="...">
+              <div class="card-body position-absolute bottom-0 w-100">
+                <div class="d-flex px-3 justify-content-between">
+                  <h5 class="card-title text-danger">Tên sản phẩm</h5>
+                  <p class="card-text text-success">300000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="container footer">
+        <div class="row m-3">
+          <div class="col-3">
+            <h3>SHARED DEAL thời trang cao cấp</h3>
+            <div class="d-flex">
+              <i class="bi bi-geo-alt-fill me-2"></i>
+              <p>ADD: 5/12 Quang Trung, P.14, Quận Gò Vấp, Tp.Hồ Chí Minh</p>
+            </div>
+            <div class="d-flex m-1">
+              <i class="bi bi-telephone-fill me-2"></i>
+              <p>Phone: (058) 66 85 85 38</p>
+            </div>
+            <div class="d-flex">
+              <i class="bi bi-envelope-fill me-2"></i>
+              <p>info@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <h3>Giới thiệu</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              soluta totam fugiat tenetur</p>
+            <div class="icon">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-pinterest"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-secondary mx-auto my-3"
+          style="width: 70%; height: 1px"></div>
+          <div class="d-flex justify-content-center">
+            <i class="bi bi-c-circle"></i>
+            <p>2022 By Đào Duy Tấn- 651331</p>
+          </div>
+          <div class="text-center">
+            <a class="text-white text-decoration-none" href="https://www.facebook.com/aoduytan.164918/">Facebook</a>
+          </div>
+         
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

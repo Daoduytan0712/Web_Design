@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vdjs_Lê Kim Linh_65131708</title>
+    <script src="vidu.js"></script>
+    <style type="text/css">
+        h2{color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="startTime()">
+    
+    Khai báo JavaScript
+    <h1>A web page</h1>
+    <p id="demo">A paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+   
+
+    <!--Nhúng JavaScript vào trang web
+    <h2>Click de xem</h2>
+    <button type="button" onclick="alert('Hello JavaScript')">Click here</button>
+    -->
+
+    <!--vd setTimeout, clearTimeout
+    <script>
+    var do_alert = function(){
+        alert("Chào mừng bạn đến với tinhoc123.edu.vn");
+    };
+    setTimeout(do_alert, 3000);
+        var action = setTimeout(function(){
+    }, 3000);
+    clearTimeout(action);
+    </script>
+
+    <input type="button" onclick="clearAlert()" value="Clear" />
+    <script language="JavaScript">
+        var do_alert = setTimeout(function(){
+            alert("Chào mừng bạn đến với tinhoc123.edu.vn");
+        }, 3000);
+        function clearAlert(){
+            clearTimeout(do_alert);
+        }
+    </script>
+    -->
+
+    <!--
+    <script> 
+        if (true){
+            let domain = "tinhoc123.edu.vn";
+        }
+        // Lỗi vì biến domain ko tồn tại 
+        console.log(domain);
+    </script>
+    
+    <script>
+          if (true){
+            var domain = "tinhoc123.edu.vn";
+        }
+        // chay binh thuong
+        console.log(domain);
+    </script>
+    -->
+
+    <!-- viết hàm kiểm tra một số chắn hay lẻ 
+     <script type="text/JavaScript">
+        //Tạo hàm
+        function check_number(number) {
+            if (number % 2 == 0){
+                alert(number + 'Số lẻ');
+            }
+            else {
+                alert(number + ' là số chẵn');
+            }
+        }
+        check_number(3);
+     </script>
+    -->
+     <!-- viết hàm kiểm tra một số chia hết cho 3
+     <script type="text/JavaScript">
+        var chia_het_cho_3 = (number) => {
+           if (number % 3 == 0){
+               return true;
+           }
+           return false;
+       };
+       </script>
+        -->
+
+        <!-- vd console
+       <script type="text/JavaScript">
+            var website = 'tinhoc123.edu.vn';
+           console.log(website);
+       </script>
+        -->
+
+       <!-- vd nd thong bao
+       <script>
+           var a=confirm("Are you sure?");
+       </script>
+       -->
+   
+       <!-- vd nd doi thoai
+       <script>
+           var a=prompt("Your Lastname:","");
+           var b=prompt("Your Firstname","");
+           document.write("Your Fullname is:"+ a +" "+b);
+       </script>
+       -->
+       
+    <!---->
+
+       <!--vd string
+       <script>
+           var website = "website tinhoc123.edu.vn";
+            var message = "Học lập trình tại \"tinhoc123.edu.vn";
+            var domain = 'tinhoc123.edu.vn - \'web học lập trình\'';
+            var website = "website"+ "tinhoc123.edu.vn";
+            console.log(website);
+            console.log(message);
+            console.log(domain);
+
+            //trc khi chuyển đổi
+            var number = 12;
+            alert(typeof number);
+
+            //sau khi chuyển đổi
+            number = number.toString();
+            alert(typeof number);
+
+            //string object
+            var messagea = new String("chào mừng bạn đén với tinhoc123.edu.vn");
+            console.log(typeof messagea);
+            //String function 
+            var messageb = String("chào mừng đến với tinhoc123.edu.vn");
+            console.log(typeof messageb);
+       </script>
+        -->
+
+        <!--vd một số hàm xử lí trong chuỗi
+        <script>
+              var string = "Welcome tinhoc123.edu.vn";
+              document.write(string.charAt(1) + "<br/>");
+              document.write(string.charCodeAt(1) + "<br/>");
+              
+              var string = "Chào mừng bạn đến với tinhoc123.edu.vn";
+              document.write("Vị trí xuất hiện chuỗi tinhoc123.edu.vn là: " + string.indexOf("tinhoc123.edu.vn"));
+
+              var str = "Please locate where 'locate' occurs!";
+              var pos1 = str.indexOf("locate"); //Kết quả 7
+              //Két quả 21 - là vị trí locate cuối cùng
+              var pos2 = str.lastIndexOf("locate");
+              var pos3 = str.search("locate"); //Kết quả 7
+        </script>
+        -->
+
+         <!-- vd tạo đòng hồ online
+        <div id="timer">
+        
+        </div>
+        <script>
+            //hàm khởi tạp đồng hồ
+            function startTime(){
+                //Lấy Object ngày hiện tại
+                var today = new Date();
+                //Giờ, phuýt , giây hiện tại
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                //Chuyển đổi sang dạng 01, 02, 03
+                m = checkTime(m);
+                s = checkTime(s);
+                //ghi ra trình duyệt
+                document.getElementById('timer').innerHTML = h + ":" + m + ":" + s;
+                //Dùng hàm  setTimeout để thiết lập gọi lại 0.5 giây / lần
+                var t = setTimeout(function() {
+                    startTime();
+                }, 500);
+            }
+            //Hàm có tác dụng chuyển những số bé
+            function checkTime(i){
+            if (i < 10)
+                i = "0" + i;
+            return i;
+            }
+        </script>
+        -->
+
+        <!-- xử lí event trong Js
+        <input type="button" value="Click me" id="clickme">
+        <script>
+            document.getElementById('clickme').onclick = function(){
+                alert('Bạn đã click vào nút này!');
+            }
+        </script>
+        -->
+
+        <!--Cách thêm băt sự kiện
+        <ul>
+            <li><a href="#" onclick="do_something()">Tin công nghệ</a></li>
+            <li><a href="#" onclick="do_something()">Tin trong nước</a></li>
+            <li><a href="#" onclick="do_something()">Tin thời sự</a></li>
+        </ul>
+        <script>
+              function do_something(){
+                alert('Bạn đã click vào nút này!');
+        }
+        </script>
+
+        <input type="button" id="show-btn" value="Click me" />
+        <script language="JavaScript">
+            //lấy đối tượng
+            var button = document.getElementById("show-btn");
+            //thêm sự kiện cho đối tượng
+            button.onclick = function(){
+                alert("Bạn vừa click vào button");
+            };
+        </script>
+
+        <ul>
+            <li><a href="#" class="show">Tin công nghệ</a></li>
+            <li><a href="#">Tin trong nước</a></li>
+            <li><a href="#" class="show">Tin thời sự</a></li>
+        </ul>
+        <script language="JavaScript">
+            //lấy đối tượng
+            var a_list = document.getElementsByClassName("show");
+            //Lặp và gán sự kiện
+            for (var i = 0; i < a_list.length; i++){
+                a_list[i].onclick = function(){
+                    alert('Xin chào, bạn vừa click vào tôi');
+                    //return false để khỏi reload trang
+                    return false
+                };
+            }
+        </script>
+        -->
+
+        <!-- vd về xử lý sự kiện vd1 
+        <div id = "result"></div>
+        <input type="text" id="message" value="" onkeyup="show_result()"/>
+        <script language="JavaScript">
+            //Hàm show kết quả
+            function show_result(){
+                //Lấy 2 thẻ HTML
+                var input = document.getElementById("message").value;
+                var div = document.getElementById("result");
+                //Gán nội dung ô input vào thẻ div
+                div.innerHTML = input;
+            }
+        </script>
+        -->
+
+         <!-- vd về xử lý sự kiện vd2 
+          <h3>Hãy copy dòng chữ dưới đây:</h3>
+          <div oncopy="show_message()">
+                Chào mừng bạn đến với thế giới JavaScript 
+          </div>
+          <script language="JavaScript">
+                //Hàm show kết quả
+                function show_message(){
+                    alert("Bạn đã copy thành công");
+                }
+          </script>
+        -->
+
+        <!--vd về xử lý sự kiện vd3
+        <form>
+            a: <input type="text" id="a" value="" onkeyup="tinh()"/>
+            b: <input type="text" id="b" value="" onkeyup="tinh()"/>
+            Kết quả: <input type="text" id="result" value=""/>
+        </form>
+        <script language="JavaScript">
+            //Hàm tính kết quả
+            function tinh(){
+                //Lấy 3 ô input
+                var a = document.getElementById("a").value;
+                var b = document.getElementById("b").value;
+                var result = document.getElementById("result");
+                //Tính tổng 2 ô đầu tiên
+                var tong = parseFloat(a) + parseFloat(b);
+                //Gán giá trị vào ô thứ 3
+                //Phải kiểm tra tổng hai số này có bị lỗi ko
+                if (!isNaN(tong)) result.value = tong;
+            }
+        </script>
+        -->
+
+        <!--Event - return TRUE/FAlSE
+        <script>
+            function checkSomething(){
+                return true;
+            }
+            var flag = checkSomething();
+            console.log(flag); //true
+            //vd2
+            function laSoChan(num){
+                return (num % 2 == 0);
+            }
+            console.log(laSoChan(2)); // true
+            console.log(laSoChan(3)); // false
+            console.log(laSoChan(5)); // false
+        </script>
+        -->
+
+        <!-- Vd sự kiện onclick return false
+         <form method="get">
+            <input type="submit" onclick="return validate()" value="Submit"/>
+         </form>
+         <script>
+            function validate(){
+                return false;
+            }
+         </script>
+        -->
+
+        <!--sau khi sửa
+        <form method="get">
+            <input type="submit" onclick="validate()" value="Submit"/>
+        </form>
+        <script>
+            function validate(){
+                alert("check");
+                return false;
+            }
+        </script>
+        -->
+
+        <!--vd validate form sử dụng return trong javascript
+        <form method="post" action="">
+            Username:
+            <input type="text" value="" name="Username" id="Username"/> <br/>
+            Password:
+            <input type="text" value="" name="Password" id="Password"/> <br/>
+            Re Password:
+            <input type="text" value="" name="Re-Password" id="Re-Password"/> <br/>
+            <input type="submit" value="Register" onclick="return validate()" />
+        </form>
+        <script language="JavaScript">
+            function validate(){
+                //Lấy giá trị
+                var Username = document.getElementById("Username").value;
+                var Password = document.getElementById("Password").value;
+                var Re_Password = document.getElementById("Re-Password").value;
+                //Kiểm tra các giá trị
+                if (Username == "") {
+                    alert("Bạn chưa nhập tên đăng nhập");
+                    return false;
+                }
+                if (Password == "") {
+                    alert("Bạn chưa nhập tên mật khẩu");
+                    return false;
+                }
+                if (Password != Re_Password) {
+                    alert("Mật khẩu nhập lại không đúng");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+        -->
+
+        <!--sự kiện onload trong Javascript-->
+        <!--hàm sai
+        <script>
+            //Sai vì hàm do_validate chưa được định nghĩa
+            var flag = do_validate();
+        </script>
+        <script src="a.js"></script>
+        -->
+
+        <!--hàm đúng
+        <script src="myScript.js"></script>
+        <script>
+            //Đúng vì hàm do_validate đã được định nghĩa
+            var flag = do_validate();
+        </script>
+        -->
+
+        <!--sự kiện onload vd 1 
+        <script>
+            window.onload = function(){
+                do_validate();
+            };
+        </script>
+        <script>
+            function do_validate(){
+                alert(1);
+            }
+        </script>
+        -->
+         <!--sự kiện onload vd2
+         <script>
+            alert(1);
+            window.onload = function(){
+                alert(3);
+            };
+            alert(2);
+         </script>
+        -->
+
+        <!--Hàm addEventListener() trong JavaScript vd1
+        <input type="text" id="txt-val" value="" />
+        <div id="result"></div>
+        <script language="JavaScript">
+            //Lấy đối tượng
+            var input = document.getElementById("txt-val");
+            //Thêm sự kiện cho đối tượng
+            input.addEventListener('keyup', function(){
+                //gán giá trị vào div
+                document.getElementById('result').innerHTML = input.value;
+            });
+        </script>
+        -->
+        <!--Hàm addEventListener() trong JavaScript vd2 
+        <input type="text" id="txt-val" value="" />
+        <div id="result"></div>
+        <script language="JavaScript">
+             //Lấy đối tượng
+             var input = document.getElementById("txt-val");
+            //Thêm sự kiện cho đối tượng
+            input.addEventListener('keyup', function(){
+                //gán giá trị vào div
+                document.getElementById('result').innerHTML = input.value;
+            });
+            //Bổ sung hành động nữa
+            input.addEventListener('keyup', function(){
+                if (input.value.length > 5) {
+                    alert("Bạn đã nhập nhiều hơn 5 ký tự");
+                }
+            });
+        </script>
+        -->
+
+        <!--vd truyền tham số vào sự kiện trong hàm addEventListener
+        <button id="btn">Nhấn vô</button>
+        <script>
+            //Lấy đối tượng
+            var button = document.getElementById("btn");
+            //Thêm sự kiện cho đối tượng
+            button.addEventListener('click', function(){
+                do_something(2, 3);
+            });
+            function do_something(a, b){
+                alert( a + b);
+            }
+        </script>
+        -->
+
+        <!--vd hàm removeEventListener()
+        <button id="something">Nhấn vô</button>
+        <script>
+        
+            //Lấy đối tượng
+            var object = document.getElementById("something");
+            //Hành động validate
+            function do_validate(){
+                //do something
+                alert("text");
+            }
+            //Thêm hành động vào sự kiện click
+            object.addEventListener("click", do_validate);
+            //Xóa hành động validate vào sự kiện click
+            setTimeout(function() {
+            object.removeEventListener("click", do_validate);
+            alert("sau khi xóa");
+            }, 3000);
+        
+        </script>
+        -->
+
+        <!--vd xây dựng một ứng dụng khi di chuyển chuột thì sẽ xuất hiện một dãy số ngẫu nhiên, nếu người dùng click vào button Stop Random thì sẽ dừng random dãy số đó
+        <div id="result"></div>
+        <input type="button" value="Stop Random" id="stop_random" />
+        <script language = "JavaScript">
+            //B1: Lấy các đối tượng
+            var result = document.getElementById("result");
+            var button = document.getElementById("stop_random");
+            var html = document.getElementsByTagName("html")[0];
+            //B2: Định nghĩa hành động hiển thị dãy số random
+            function do_random() {
+                var randomString = Math.random();
+                result.innerHTML = randomString;
+            }
+            //B3: Thêm hành động do_random cho sự kiện mousemove thẻ <html>,
+            html.addEventListener("mousemove", do_random);
+            //B4: Thêm sự kiện click cho button
+            button.addEventListener("click", function(){
+                //Xóa hành động do_random khỏi sự kiện mousemove
+                html.removeEventListener("mousemove", do_random);
+            });        
+            </script>
+        -->
+</body>
+</html>
